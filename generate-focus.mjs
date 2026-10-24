@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, existsSync } from 'node:fs';
 const API_KEY = process.env.GEMINI_API_KEY;
 if (!API_KEY) { console.error('GEMINI_API_KEY is not set'); process.exit(1); }
 
-const MODEL = 'gemini-2.5-flash';
+const MODEL = 'gemini-3.8-flash';
 const HISTORY_FILE = new URL('./history.json', import.meta.url);
 const FOCUS_FILE = new URL('./focus.json', import.meta.url);
 
